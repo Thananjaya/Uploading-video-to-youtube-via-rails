@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Upload video</h1>
+  <% if current_user %>
+    <%= simple_form_for @video, input_html: {multipart: true} do |f| %>
+      <%= f.input :file, as: :file %>
+      <%= f.input :title %>
+      <%= f.input :description %>
+      <%= f.button :submit, "upload video" %>
+    <% end %>
+  <% else %>
+    <%= link_to 'Log In', '/auth/google_oauth2' %>
+  <% end %>
+</div>
