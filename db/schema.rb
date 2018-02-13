@@ -26,8 +26,14 @@ ActiveRecord::Schema.define(version: 20180213071100) do
     t.string   "title"
     t.string   "file"
     t.string   "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.integer  "likes"
+    t.integer  "dislikes"
+    t.datetime "published_at"
+    t.integer  "uid"
+    t.integer  "user_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.index ["user_id"], name: "index_videos_on_user_id"
   end
 
 end
