@@ -14,10 +14,15 @@ gem 'sqlite3'
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+#gem file youtube api interaction
 gem 'yt', '~> 0.13.7'
+#gem file for bootstrap styling
 gem 'bootstrap-sass', '~> 3.3.0.1'
+#gem file for inspection
 gem 'pry'
+#gem file for simple-form
 gem 'simple_form'
+#gem file for google authentication
 gem 'omniauth-google-oauth2'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
